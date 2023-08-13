@@ -9,7 +9,7 @@ export const Project = () => {
                 <Col xs lg="3" style={{ backgroundColor: "  " }}>
                     <Sidebar />
                 </Col>
-                <Col className="item-b " id='item-b' style={{ backgroundColor: "red" }}>
+                <Col className="item-b " id='item-b' style={{ backgroundColor: " " }}>
                 </Col>
             </Row>
         </Container>

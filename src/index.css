@@ -13,8 +13,8 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 html {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @font-face {
@@ -177,13 +177,11 @@ html:not([data-scroll="0"]) sidebar-parent {
   border-radius: 20px;
   padding: 20px;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-
 }
 
-#item-b{
+#item-b {
   /* background-color: red; */
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-
 }
 
 .card-parent {
@@ -282,21 +280,21 @@ html:not([data-scroll="0"]) sidebar-parent {
   line-height: 10px;
 }
 
-.contact-form{
+.contact-form {
   margin-top: 30px;
   background-color: #66cfbe00;
 }
 
-.contact-form>div{
+.contact-form > div {
   display: flex;
 }
 
-.contact-input-title{
-  font-family: "Outfit";  
+.contact-input-title {
+  font-family: "Outfit";
 }
 
-.contact-input{
-  background-color: rgb(249, 249, 249) !important;  
+.contact-input {
+  background-color: rgb(249, 249, 249) !important;
   border-radius: 5px;
   width: 100%;
   height: 40px;
@@ -308,15 +306,14 @@ html:not([data-scroll="0"]) sidebar-parent {
   transition: 0.2s linear;
 }
 
-
-input[input="text"]{
-  background-color: rgb(9, 218, 114) !important;  
+input[input="text"] {
+  background-color: rgb(9, 218, 114) !important;
   /* width: 350px; */
   /* height: 40px; */
   border-color: transparent;
 }
 
-.contact-input:focus{
+.contact-input:focus {
   background-color: rgb(244, 247, 252) !important;
   outline: #a7a6da !important;
   width: 95%;
@@ -324,4 +321,181 @@ input[input="text"]{
   border-color: transparent; */
 }
 
+/* Skills page */
 
+.skills-page-title-parent {
+  /* background-color: #f9f9f9e4; */
+  height: 100px;
+  margin-top: 50px;
+}
+
+.skills-page-title {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: small;
+  letter-spacing: 4px;
+  line-height: 15px;
+}
+
+.skills-sub-title {
+  font-size: xx-large;
+}
+
+.skill-story {
+  font-family: "Outfit";
+  letter-spacing: 2px;
+  font-weight: 200;
+  animation: showUp 1s normal !important;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-bar {
+  font-family: "Outfit";
+  font-weight: 300;
+  letter-spacing: 1px;
+  /* display: block; */
+  opacity: 1;
+  animation: fadeIn 0.5s normal, showUpSkillBar 1s normal 0.5s !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  /* 40% {
+    opacity: 0;
+  } */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showUpSkillBar {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-bar-col {
+  position: relative;
+}
+
+.react-div {
+  position: absolute;
+  color: #2c98f0;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.react-div span {
+  margin-left: 80%;
+}
+
+.react .progress-bar {
+  background-color: #2c98f0;
+  width: 90px;
+}
+
+.node-div {
+  position: absolute;
+  color: #ec5453;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.node-div span {
+  margin-left: 70%;
+}
+
+.node .progress-bar {
+  background-color: #ec5453;
+}
+
+.sql-div {
+  position: absolute;
+  color: #f9bf3f;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.sql-div span {
+  margin-left: 60%;
+}
+
+.sql .progress-bar {
+  background-color: #f9bf3f;
+}
+
+.progress {
+  height: 7px;
+}
+
+.sql .progress-bar {
+  background-color: #f9bf3f;
+}
+
+.mongo-div {
+  position: absolute;
+  color: #a84cb8;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.mongo-div span {
+  margin-left: 50%;
+}
+
+.mongo .progress-bar {
+  background-color: #a84cb8;
+}
+
+.net-div {
+  position: absolute;
+  color: #59db66;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.net-div span {
+  margin-left: 40%;
+}
+
+.net .progress-bar {
+  background-color: #59db66;
+}
+
+.firebase-div {
+  position: absolute;
+  color: #cb7337;
+  width: 100%;
+  top: 0px;
+  font-weight: 600;
+}
+
+.firebase-div span {
+  margin-left: 65%;
+}
+
+.firebase .progress-bar {
+  background-color: #cb7337;
+}
