@@ -1,9 +1,7 @@
 import React from "react";
-import { Image, Nav } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import UserImage from ".././Assest/Image/profile-img.png";
-import Login from "../Login";
-import { BrowserRouter as Router, Link, Route, Routes, NavLink } from "react-router-dom";
-import { Contact } from "./Contact";
+import { NavLink } from "react-router-dom";
 
 export const Sidebar = () => {
   // const transition=() => {
@@ -15,7 +13,7 @@ export const Sidebar = () => {
       <div className="sidebar-content" id="sidebar-content">
         <div className="banner">
           {/* <Col xs={6} md={4}> */}
-          <Image className="image-logo" src={`${UserImage}`} roundedCircle style={{objectFit:"cover"}} />
+          <Image className="image-logo" src={`${UserImage}`} roundedCircle style={{ objectFit: "cover" }} />
           {/* </Col> */}
         </div>
 
@@ -51,7 +49,7 @@ export const Sidebar = () => {
             <NavLink to='/Skills' className="nav-link text-black">
               {/* <svg className="bi me-2" width="16" height="16"></svg> */}
               Skills
-            </NavLink>
+0                                                             </NavLink>
           </li>
           <li className=" m-1 fs-6">
             <NavLink to={"/Contact"} className="nav-link text-black">
@@ -61,7 +59,7 @@ export const Sidebar = () => {
           </li>
         </ul>
 
-    
+
 
         <div className="flex" style={{ alignItems: "flex-end", marginTop: "50px" }}>
           <p className="my-4 " style={{ fontSize: "10px" }}>

@@ -34,7 +34,7 @@ export const Skills = () => {
               <div className='' style={{}}>
                 <Row className='skills-page-title-parent'>
                   <div className='skills-page-title p-4'>
-                    <span className='text-uppercase'> my speciality  <img src='' /> </span><br /> <br /> <br />
+                    <span className='text-uppercase'> my speciality  <img src='' alt='' /> </span><br /> <br /> <br />
                     <span className='text-uppercase skills-sub-title'>my skills</span>
                   </div>
                 </Row>
