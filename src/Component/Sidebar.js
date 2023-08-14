@@ -48,8 +48,7 @@ export const Sidebar = () => {
           <li className=" m-1 fs-6">
             <NavLink to='/Skills' className="nav-link text-black">
               {/* <svg className="bi me-2" width="16" height="16"></svg> */}
-              Skills
-0                                                             </NavLink>
+              Skills                                                            </NavLink>
           </li>
           <li className=" m-1 fs-6">
             <NavLink to={"/Contact"} className="nav-link text-black">
