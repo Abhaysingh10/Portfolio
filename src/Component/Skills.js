@@ -4,6 +4,7 @@ import { Sidebar } from './Sidebar'
 
 export const Skills = () => {
 
+  document.title = 'Skills'
 
   const skillComponent = (skillName, percentage, className) => {
 

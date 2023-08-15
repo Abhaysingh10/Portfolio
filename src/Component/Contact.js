@@ -5,6 +5,7 @@ import WavingHand from './../Assest/Image/waving-hand.png'
 
 export const Contact = () => {
 
+    document.title = 'Contact'
 
 
     return (
@@ -20,7 +21,7 @@ export const Contact = () => {
                             <div className='' style={{}}>
                                 <Row className='contact-page-title-parent'>
                                     <div className='contact-page-title'>
-                                        <span>Love to hear from you, <img src={WavingHand}  alt=''/> </span><br />
+                                        <span>Love to hear from you, <img src={WavingHand} alt='' /> </span><br />
                                         <span>Get in touch</span>
                                     </div>
                                 </Row>

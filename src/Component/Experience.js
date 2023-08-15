@@ -3,6 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Sidebar } from './Sidebar'
 
 export const Experience = () => {
+
+  document.title  =  'Experience'
+
     return (
         <Container>
             <Row>

@@ -6,9 +6,12 @@ import { LifeSizeCardboard } from "./LifeSizeCardboard";
 
 export const Home = () => {
   React.useEffect(() => {
+
+    
     return () => { };
   }, []);
-
+  
+  document.title  =  'Home'
   return (
   <>
   <Container>
