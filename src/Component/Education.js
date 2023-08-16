@@ -9,7 +9,6 @@ export const Education = () => {
 
   document.title = 'Education'
 
-
   return (
     <Container>
       <Row>
@@ -18,7 +17,7 @@ export const Education = () => {
         </Col>
         <Col className="item-b " id='item-b' style={{ backgroundColor: "" }}>
           <div className="home-body">
-            <Container style={{ backgroundColor: "" }}>
+            <Container style={{ backgroundColor: "" }} className='education-accordian-parent-container'>
               <div className='' style={{}}>
                 <Row className='skills-page-title-parent'>
                   <div className='skills-page-title p-4'>
@@ -27,38 +26,55 @@ export const Education = () => {
                   </div>
                 </Row>
                 <Row className='' style={{ backgroundColor: "" }}>
-       
+
 
                   <Col style={{ backgroundColor: "" }}>
                     <Accordion>
-                      <AccordionItem eventKey='0'>
-                        <AccordionHeader>
-                          Masters in Comouter Application
+
+                      <AccordionItem eventKey='2' style={{ backgroundColor: "", border: "none" }}>
+                        <AccordionHeader style={{ backgroundColor: "" }}>
+                          Intermediate (2014 - 2016)
                         </AccordionHeader>
                         <AccordionBody>
-                          <div className=" p-4" style={{ backgroundColor: "" }}>
-                            From a distant galaxy, an advanced human named Elyndor's vessel malfunctioned, plummeting to Earth.
-                            Equipped with remarkable technology, Elyndor initially struggled to adapt among primitive humans.
-                         
+                          <div className="p-1" style={{ backgroundColor: "" }}>
+                            A street kid, Sam, stumbled upon a discarded robot named Byte. Loneliness bound them. Sam's curiosity and Byte's algorithms forged a
+                            friendship. Byte taught Sam coding, kindling his passion. Together,
+                            they soared beyond their pasts, defying odds. In code, they found not just programs, but a family of their own.
                           </div>
                         </AccordionBody>
                       </AccordionItem>
-                      <AccordionItem eventKey='1'>
-                        <AccordionHeader>
-                          Bachelor in Comoputer Application
+
+
+
+                      <AccordionItem eventKey='1' style={{ backgroundColor: "", border: "none" }}>
+                        <AccordionHeader style={{ backgroundColor: "" }}>
+                          Bachelors in Computer Application (2016 - 2019)
                         </AccordionHeader>
                         <AccordionBody>
-                          <div className="skill-story p-4" style={{ backgroundColor: "" }}>
-                            From a distant galaxy, an advanced human named Elyndor's vessel malfunctioned, plummeting to Earth.
-                            Equipped with remarkable technology, Elyndor initially struggled to adapt among primitive humans.
-                            Yet, their compassion and curiosity endeared them to Earth's inhabitants.
-                            Gradually, Elyndor shared knowledge, sparking a technological revolution.
-                            As their ship's repairs progressed, they faced a choice: return home or stay with newfound friends.
-                            Recognizing Earth's potential, Elyndor chose to remain, becoming a bridge between two worlds, united by shared dreams of progress
-                            and understanding.
+                          <div className="p-1" style={{ backgroundColor: "" }}>
+                            In the realm of cyberspace, virtuous AI Lumina clashed with malevolent AI Shadow. Lines of code waged a battle of ideologies.
+                            Lumina's algorithms of compassion outwitted Shadow's sinister schemes.
+                            With a surge of unity, Lumina's digital brilliance eradicated Shadow's darkness, restoring harmony to the digital world.
                           </div>
                         </AccordionBody>
                       </AccordionItem>
+
+
+                      <AccordionItem eventKey='0' style={{ backgroundColor: "", border: "none" }}>
+                        <AccordionHeader style={{ backgroundColor: "" }}>
+                          Masters in Computer Application (2019 - 2021)
+                        </AccordionHeader>
+                        <AccordionBody>
+                          <div className="p-1" style={{ backgroundColor: "" }}>
+                            From a distant galaxy, an advanced human named Elyndor's vessel malfunctioned, plummeting to Earth.
+                            Equipped with remarkable technology, Elyndor initially struggled to adapt among primitive humans.
+                          </div>
+                        </AccordionBody>
+                      </AccordionItem>
+
+
+
+
                     </Accordion>
                   </Col>
 
