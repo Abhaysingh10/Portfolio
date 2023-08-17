@@ -27,12 +27,6 @@ export const Sidebar = () => {
               Home
             </NavLink>
           </li>
-          <li className="m-1">
-            <NavLink to='/Project' className="nav-link text-black fs-6">
-              {/* <svg className="bi me-2" width="16" height="16"></svg> */}
-              Project
-            </NavLink>
-          </li>
           <li className=" m-1 fs-6">
             <NavLink to='/Education' className="nav-link text-black">
               {/* <svg className="bi me-2" width="16" height="16"></svg> */}
@@ -40,16 +34,24 @@ export const Sidebar = () => {
             </NavLink>
           </li>
           <li className=" m-1 fs-6">
+            <NavLink to='/Skills' className="nav-link text-black">
+              {/* <svg className="bi me-2" width="16" height="16"></svg> */}
+              Skills                                                            </NavLink>
+          </li>
+          <li className="m-1">
+            <NavLink to='/Project' className="nav-link text-black fs-6">
+              {/* <svg className="bi me-2" width="16" height="16"></svg> */}
+              Project
+            </NavLink>
+          </li>
+      
+          <li className=" m-1 fs-6">
             <NavLink to='/Experience' className="nav-link text-black">
               {/* <svg className="bi me-2" width="16" height="16"></svg> */}
               Experience
             </NavLink>
           </li>
-          <li className=" m-1 fs-6">
-            <NavLink to='/Skills' className="nav-link text-black">
-              {/* <svg className="bi me-2" width="16" height="16"></svg> */}
-              Skills                                                            </NavLink>
-          </li>
+        
           <li className=" m-1 fs-6">
             <NavLink to={"/Contact"} className="nav-link text-black">
               {/* <svg className="bi me-2" width="16" height="16"></svg> */}

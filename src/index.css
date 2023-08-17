@@ -504,16 +504,16 @@ input[input="text"] {
 
 .education-accordian-parent-container {
   font-family: Outfit;
-
 }
 
-.accordion-header{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(142, 142, 142, 0.234) 0px 3px 7px -3px;
+.accordion-header {
+  box-shadow: rgba(35, 35, 206, 0.25) 0px 6px 12px -2px, rgba(142, 142, 142, 0.07) 0px 3px 7px -3px;
 }
 
 .accordion-button {
   background: linear-gradient(96deg, rgba(167, 166, 218, 1) 2%, rgba(192, 166, 218, 1) 51%, rgb(247, 226, 229) 98%);
-  margin-top: 10px;
+  backdrop-filter: blur(5px);
+  margin-top: 30px;
   font-size: 250;
   height: 60px;
   letter-spacing: 3px;
@@ -522,23 +522,17 @@ input[input="text"] {
   transition: 0.5s ease;
   border-color: #a7a6da;
   border: 2px dotted linear-gradient(96deg, rgb(117, 116, 215) 2%, rgb(176, 134, 219) 51%, rgb(255, 179, 190) 98%);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-  
-  /* border-radius: 20px !important; */
 }
 
 .accordion-button:not(.collapsed) {
   background: linear-gradient(96deg, rgb(117, 116, 215) 2%, rgb(176, 134, 219) 51%, rgb(255, 179, 190) 98%);
   border-color: black;
   letter-spacing: 3px;
-  /* border-radius: 20px !important; */
   color: #ffffff;
   transition: 0.5s ease;
   border: 2px dotted linear-gradient(96deg, rgb(117, 116, 215) 2%, rgb(176, 134, 219) 51%, rgb(255, 179, 190) 98%);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-
 }
- 
+
 .accordion-button:focus {
   z-index: 3;
   border-color: #00000000 !important;
@@ -555,7 +549,4 @@ input[input="text"] {
   letter-spacing: 2px;
   font-weight: 200;
   border: 2px dotted linear-gradient(96deg, rgb(117, 116, 215) 2%, rgb(176, 134, 219) 51%, rgb(255, 179, 190) 98%);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-
-  /* animation: showUp 1s normal !important; */
 }
