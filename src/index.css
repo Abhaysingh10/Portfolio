@@ -550,3 +550,65 @@ input[input="text"] {
   font-weight: 200;
   border: 2px dotted linear-gradient(96deg, rgb(117, 116, 215) 2%, rgb(176, 134, 219) 51%, rgb(255, 179, 190) 98%);
 }
+
+/* Experience */
+
+.timeline-parent {
+  background-color: rgba(185, 65, 65, 0);
+  height: 160px;
+  width: 100%;
+  animation: showUp 1s ease-in-out;
+}
+
+.timeline-icon {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(227, 122, 73);
+  border-radius: 50%;
+  border: 4px solid #f2f3f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: -9px;
+  /* align-items: center; */
+}
+
+.timeline-middle-line {
+  position: absolute;
+  background-color: #f2f3f7;
+  height: 125px;
+  width: 4px;
+  /* margin-top: 60px; */
+}
+
+.timeline-header-parent {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(76, 175, 205, 0.437);
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.timeline-header {
+  line-height: 15px;
+  font-weight: 450;
+  letter-spacing: 2px;
+}
+
+.timeline-sub-header {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.timeline-detail {
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #202020e1;
+}
