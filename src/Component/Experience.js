@@ -58,10 +58,6 @@ export const Experience = () => {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            {/* <Row style={{ backgroundColor: "" }}>
-                                                <Col xs lg="2" style={{ backgroundColor: "" }}> <div className='timeline-middle-line'></div></Col>
-                                                <Col style={{ backgroundColor: "" }}> Col 4</Col>
-                                            </Row> */}
                                         </Container>
                                     </div>
                                     <div className='timeline-parent' style={{ backgroundColor: "" }}>
