@@ -1,12 +1,18 @@
 import React from "react";
-import { Image } from "react-bootstrap";
+import { Accordion, Image } from "react-bootstrap";
 import UserImage from ".././Assest/Image/profile-img.png";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 
 export const Sidebar = () => {
-  // const transition=() => {
-  //     document.getElementById('sidebar-parent').style.animation="spin 1s normal forwards ease-in-out";
-  // }
+
+  // const [first, setfirst] = useState(second)
+
+  React.useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+  }, [])
 
   return (
     <div className="glass sidebar-parent" id="sidebar-parent">

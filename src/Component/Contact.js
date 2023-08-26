@@ -19,32 +19,32 @@ export const Contact = () => {
                     <div className="home-body">
                         <Container style={{ backgroundColor: "" }}>
                             <div className='' style={{}}>
-                                <Row className='contact-page-title-parent'>
+                                <Row className='contact-page-title-parent animate__animated animate__bounceInRight'>
                                     <div className='contact-page-title'>
                                         <span>Love to hear from you, <img src={WavingHand} alt='' /> </span><br />
                                         <span>Get in touch</span>
                                     </div>
                                 </Row>
-                                <Row className='contact-form'>
+                                <Row className='contact-form '>
                                     <div style={{ justifyContent: "center", padding: "20px" }}>
                                         <Container>
-                                            <Row style={{ backgroundColor: "" }}>
+                                            <Row style={{ backgroundColor: "" }} className='show-up-animation'>
                                                 <Col className='contact-input-title'>Your name</Col>
                                                 <Col className='contact-input-title'>Your email</Col>
                                             </Row>
-                                            <Row style={{ backgroundColor: "" }}>
+                                            <Row style={{ backgroundColor: "" }}  className='show-up-animation'>
                                                 <Col className='my-1'><input className='contact-input' type="text" placeholder='' /></Col>
                                                 <Col className='my-1'><input className='contact-input' type="text" placeholder='' /></Col>
                                             </Row>
-                                            <Row className='mt-3' style={{ backgroundColor: "", marginTop: "" }}>
-                                                <Col className='contact-input-title'>What are you interseted in?</Col>
-                                                <Col className='contact-input-title'>Project Budget</Col>
+                                            <Row className='show-up-animation' style={{ backgroundColor: "", marginTop: "" }} >
+                                                <Col className='my-1 contact-input-title'>What are you interseted in?</Col>
+                                                <Col className='my-1 contact-input-title'>Project Budget</Col>
                                             </Row>
                                             <Row style={{ backgroundColor: "" }}>
                                                 <Col className='my-1'><input type="text" className='contact-input' placeholder='' /></Col>
                                                 <Col className='my-1'><input type="text" className='contact-input' placeholder='' /></Col>
                                             </Row>
-                                            <Row className='mt-3'>
+                                            <Row className='mt-1'>
                                                 <Col className='contact-input-title'>Message</Col>
                                             </Row>
                                             <Row className=''>

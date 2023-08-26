@@ -325,7 +325,7 @@ input[input="text"] {
 
 .skills-page-title-parent {
   /* background-color: #f9f9f9e4; */
-  height: 100px;
+  height: 100px;  
   margin-top: 50px;
 }
 
@@ -345,10 +345,10 @@ input[input="text"] {
   font-family: "Outfit";
   letter-spacing: 2px;
   font-weight: 200;
-  animation: showUp 1s normal !important;
+  animation: show-up 1s normal !important;
 }
 
-@keyframes showUp {
+@keyframes show-up {
   0% {
     opacity: 0;
     margin-top: 200px;
@@ -365,10 +365,10 @@ input[input="text"] {
   letter-spacing: 1px;
   /* display: block; */
   opacity: 1;
-  animation: fadeIn 0.5s normal, showUpSkillBar 1s normal 0.5s !important;
+  animation: fade-in 0.5s normal, show-up-skillBar 1s normal 0.5s !important;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -380,7 +380,7 @@ input[input="text"] {
   }
 }
 
-@keyframes showUpSkillBar {
+@keyframes show-up-skillBar {
   0% {
     opacity: 0;
     margin-top: 200px;
@@ -504,6 +504,8 @@ input[input="text"] {
 
 .education-accordian-parent-container {
   font-family: Outfit;
+  /* animation: show-up 1.3s ease-in-out !important; */
+
 }
 
 .accordion-header {
@@ -557,7 +559,7 @@ input[input="text"] {
   background-color: rgba(185, 65, 65, 0);
   height: 160px;
   width: 100%;
-  animation: showUp 1s ease-in-out;
+  animation: show-up 1s ease-in-out !important;
 }
 
 .timeline-icon {
@@ -588,12 +590,13 @@ input[input="text"] {
 }
 
 .timeline-header-parent {
-  padding: 15px;
-  display: flex;
+  color: #393939;
+  padding: 25px;
   align-items: center;
   background-color: rgba(76, 175, 205, 0.437);
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* display: flex; */
 }
 
 .timeline-header {
@@ -610,5 +613,25 @@ input[input="text"] {
 .timeline-detail {
   letter-spacing: 2px;
   font-size: 15px;
-  color: #202020e1;
+  color: #575757e1;
+  /* background-color: pink; */
 }
+
+.tech-stack-title{
+  font-weight: 500;
+  color: #565656;
+}
+
+.tech-stack-value{
+  font-weight: normal;
+}
+
+
+
+
+
+
+.show-up-animation{
+  animation: show-up 1s normal !important;
+}
+

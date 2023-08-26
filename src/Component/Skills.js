@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, ProgressBar, Row } from 'react-bootstrap'
 import { Sidebar } from './Sidebar'
-
+import { Title } from './Title'
 export const Skills = () => {
 
   document.title = 'Skills'
@@ -33,12 +33,9 @@ export const Skills = () => {
           <div className="home-body">
             <Container style={{ backgroundColor: "" }}>
               <div className='' style={{}}>
-                <Row className='skills-page-title-parent'>
-                  <div className='skills-page-title p-4'>
-                    <span className='text-uppercase'> my speciality  <img src='' alt='' /> </span><br /> <br /> <br />
-                    <span className='text-uppercase skills-sub-title'>my skills</span>
-                  </div>
-                </Row>
+              
+                  <Title title='my speciality' subTitle='my skills' />
+               
 
                 <Row className='skill-story-parent' style={{ backgroundColor: "" }}>
                   <div className="skill-story p-4" style={{ backgroundColor: "" }}>
@@ -48,7 +45,7 @@ export const Skills = () => {
                     technologically clueless.
                   </div>
                 </Row>
-                <Row className='p-3 skills-bar' style={{ backgroundColor: "" }}>
+                <Row className='p-3 skills-bar' >
                   <Col className='skills-bar-col' style={{ backgroundColor: "" }}>React Js
                     <div className='react-div'>
                       <span>
@@ -75,7 +72,7 @@ export const Skills = () => {
                   </Col>
 
                 </Row>
-                <Row className='p-3 skills-bar' style={{ backgroundColor: "" }}>
+                <Row className='p-3 skills-bar' >
                   <Col className='skills-bar-col' style={{ backgroundColor: "" }}>SQL
                     <div className='sql-div'>
                       <span>
