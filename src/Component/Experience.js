@@ -43,7 +43,7 @@ export const Experience = () => {
                                                         </div>
                                                     </Row>
                                                 </Col>
-                                                <Col xs-lg="10" className='timeline-header-parent' style={{ backgroundColor: "#f2f3f7" }}>
+                                                <Col xs-lg="10" className='timeline-header-parent'>
                                                     <div>
                                                         <div className="timeline-header"> Freelancer Managment System - FMS <br />
                                                             <div className='timeline-sub-header'><br /></div>
@@ -96,7 +96,7 @@ export const Experience = () => {
                                                         </div>
                                                     </Row>
                                                 </Col>
-                                                <Col xs-lg="10" className='timeline-header-parent' style={{ backgroundColor: "#f2f3f7" }}>
+                                                <Col xs-lg="10" className='timeline-header-parent' >
                                                     <div>
                                                         <div className="timeline-header "> P.R.I.S.M <br />
                                                             <div className='timeline-sub-header'><br /></div>
@@ -153,7 +153,7 @@ export const Experience = () => {
                                                         </div>
                                                     </Row>
                                                 </Col>
-                                                <Col xs-lg="10" className='timeline-header-parent' style={{ backgroundColor: "#f2f3f7" }}>
+                                                <Col xs-lg="10" className='timeline-header-parent' >
                                                     <div>
                                                         <div className="timeline-header "> Edtech <br />
                                                             <div className='timeline-sub-header'><br /></div>
