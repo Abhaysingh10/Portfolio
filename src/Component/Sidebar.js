@@ -1,8 +1,7 @@
 import React from "react";
-import { Accordion, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import UserImage from ".././Assest/Image/profile-img.png";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
 
 export const Sidebar = () => {
 
