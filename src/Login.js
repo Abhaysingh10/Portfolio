@@ -1,24 +1,24 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
-import {useDispatch} from 'react-redux'
-import {loginActions} from './loginActions'
+import { useDispatch } from 'react-redux'
+import { loginActions } from './loginActions'
 import { Controller, useForm } from 'react-hook-form'
 
 function Login() {
-  const dispatch=useDispatch()
+  const dispatch = useDispatch()
   const {
     handleSubmit,
     control,
-    formState: {errors}
-  }=useForm()
+    formState: { errors }
+  } = useForm()
 
-  const onSubmit=data => {
+  const onSubmit = data => {
     dispatch(loginActions(data))
   }
 
   return (
-    
+
     <div className='glass login-parent-div'>
 
       <div className='login-form'>
@@ -28,9 +28,9 @@ function Login() {
 
             <Controller
               name='email'
-              rules={{required: true}}
+              rules={{ required: true }}
               control={control}
-              render={({field: {onChange,onBlur,value}}) => (
+              render={({ field: { onChange, onBlur, value } }) => (
                 <Form.Control
                   name='email'
                   {...value}
@@ -41,7 +41,7 @@ function Login() {
                 />
               )}
             />
-            {errors.email&&<p style={{color: 'red'}}>Email is required.</p>}
+            {errors.email && <p style={{ color: 'red' }}>Email is required.</p>}
 
             <Form.Text className='text-muted'>
 
@@ -53,8 +53,8 @@ function Login() {
             <Controller
               control={control}
               name='password'
-              rules={{required: true}}
-              render={({field: {onChange,onBlur,value}}) => (
+              rules={{ required: true }}
+              render={({ field: { onChange, onBlur, value } }) => (
                 <Form.Control
                   name='password'
                   {...value}
@@ -65,8 +65,8 @@ function Login() {
                 />
               )}
             />
-            {errors.password&&(
-              <p style={{color: 'red'}}>Password is required.</p>
+            {errors.password && (
+              <p style={{ color: 'red' }}>Password is required.</p>
             )}
           </Form.Group>
           <Form.Group className='mb-3' controlId='formBasicCheckbox'>

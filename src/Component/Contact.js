@@ -32,7 +32,7 @@ export const Contact = () => {
                                                 <Col className='contact-input-title'>Your name</Col>
                                                 <Col className='contact-input-title'>Your email</Col>
                                             </Row>
-                                            <Row style={{ backgroundColor: "" }}  className='show-up-animation'>
+                                            <Row style={{ backgroundColor: "" }} className='show-up-animation'>
                                                 <Col className='my-1'><input className='contact-input' type="text" placeholder='' /></Col>
                                                 <Col className='my-1'><input className='contact-input' type="text" placeholder='' /></Col>
                                             </Row>
@@ -50,11 +50,10 @@ export const Contact = () => {
                                             <Row className=''>
                                                 <Col className='my-1' style={{ backgroundColor: "", }}><textarea className='contact-input h-100' /></Col>
                                             </Row>
-
                                             <Row className='mt-3'>
                                                 <Col className='contact-input-title'>
                                                     <div className='login-submit-button'>
-                                                        <Button className='' type='submit'>
+                                                        <Button className='' type='submit' style={{ color: "#000" }}>
                                                             Submit
                                                         </Button>
                                                     </div>
@@ -67,8 +66,6 @@ export const Contact = () => {
                         </Container>
                     </div>
                 </Col>
-                {/* <Col>
-        </Col> */}
             </Row>
         </Container>
     )
