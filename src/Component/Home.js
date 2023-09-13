@@ -1,6 +1,6 @@
 import React from "react";
 import { Sidebar } from "./Sidebar";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { DeveloperCard } from "../Cards/DeveloperCard";
 import { LifeSizeCardboard } from "./LifeSizeCardboard";
 
@@ -14,7 +14,7 @@ export const Home = () => {
   document.title  =  'Home'
   return (
   <>
-  <Container>
+  {/* <Container> */}
     <Row>
       <Col xs lg="3" style={{backgroundColor:"  "}}>
         <Sidebar />
@@ -29,7 +29,7 @@ export const Home = () => {
       {/* <Col>
       </Col> */}
     </Row>
-  </Container>
+  {/* </Container> */}
   </>    
   );
 };
