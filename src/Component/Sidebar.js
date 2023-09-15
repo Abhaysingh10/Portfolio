@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "react-bootstrap";
+import { Image, ListGroup } from "react-bootstrap";
 import UserImage from ".././Assest/Image/profile-img.png";
 import { NavLink } from "react-router-dom";
 
@@ -15,8 +15,8 @@ export const Sidebar = () => {
   return (
     <>
       <div className="navbar-res">
-        <div className="hamburger-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <div class="hamburger-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path
               fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
@@ -24,9 +24,42 @@ export const Sidebar = () => {
           </svg>
         </div>
       </div>
-      <button onclick={window["changeBackground"]()}>
+      <div className="navbar-res-expanded">
+        <div className="expanded-list">
+          <ul className="nav nav-pills flex-column mb-auto sidebar-ul">
+            <li className="fs-6 m-1">
+              <NavLink to="/" className="nav-link text-black fs-6">
+                Home
+              </NavLink>
+            </li>
+            <li className=" m-1 fs-6">
+              <NavLink to="/Education" className="nav-link text-black">
+                Education
+              </NavLink>
+            </li>
+            <li className=" m-1 fs-6">
+              <NavLink to="/Skills" className="nav-link text-black">
+                Skills{" "}
+              </NavLink>
+            </li>
+
+            <li className=" m-1 fs-6">
+              <NavLink to="/Experience" className="nav-link text-black">
+                Experience
+              </NavLink>
+            </li>
+
+            <li className=" m-1 fs-6">
+              <NavLink to={"/Contact"} className="nav-link text-black">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {/* <button onclick={window["changeBackground"]()}>
         Click here
-    </button>
+    </button> */}
       <div className="glass sidebar-parent " id="sidebar-parent">
         <div className="sidebar-content" id="sidebar-content">
           <div className="banner">

@@ -1,6 +1,11 @@
+function changeBackground() {
+  console.log("Clicked");
+}
+function enlarger() {
+  const hamburgerIcon = document.getElementsByClassName("hamburger-icon");
+  console.log("loaded");
+  console.log(hamburgerIcon);
+  hamburgerIcon[0].addEventListener("click", changeBackground);
+}
 
-// function changeBackground() {
-//     document.body.style.background = 'red';
-//  }
-
-//  window.addEventListener("load",function() { changeBackground('red') });
+setTimeout(enlarger, 2000);
