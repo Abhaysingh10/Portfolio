@@ -718,6 +718,16 @@ input[input="text"] {
   display: none;
 }
 
+.mandatory-sign{
+  color:red
+}
+
+.error-message{
+  color: red;
+  font: small;
+  font-family: 'Outfit';
+}
+
 
 @media all and (min-width: 1480px) and (max-width: 1680px) {
 }
