@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingColumns, faCircleArrowLeft, faFile } from '@fortawesome/free-solid-svg-icons'
-import { faDochub, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import {  faCircleArrowLeft, faFile } from '@fortawesome/free-solid-svg-icons'
+import {  faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Col, Container,  Row } from 'react-bootstrap';
 import { resumePDF } from './../Assest/Document/Resume-abhay.pdf'
 
 const Footer = () => {
@@ -13,16 +13,6 @@ const Footer = () => {
         setIsUpArrow((prevState) => !prevState);
         setIsDivVisible(!isDivVisible);
     }
-
-
-    const handleDownload = () => {
-        const pdfFilePath = {resumePDF}; // Update with the actual path
-        const a = document.createElement('a');
-        a.href = pdfFilePath;
-        a.download = "Resume.pdf"; // Update with the desired file name
-        a.click();
-    };
-
 
     return (
         <div>
