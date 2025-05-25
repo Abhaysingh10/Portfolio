@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCircleArrowLeft, faFile } from '@fortawesome/free-solid-svg-icons'
 import {  faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Col, Container,  Row } from 'react-bootstrap';
-import { resumePDF } from './../Assest/Document/Resume-abhay.pdf'
 
 const Footer = () => {
     const [isUpArrow, setIsUpArrow] = useState(true);
