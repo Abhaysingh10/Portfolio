@@ -55,6 +55,7 @@ code {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   /* background-color: rgb(209, 225, 239) !important; */
   background: #a7a6da;
+  transition: width 2s;
   backdrop-filter: blur(1px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
@@ -98,6 +99,9 @@ code {
 
 /* Sidebar */
 
+
+
+
 .sidebar-parent {
   position: relative;
   width: 90%;
@@ -108,9 +112,10 @@ code {
   margin-left: 50px;
   border-radius: 20px;
   padding: 20px;
-  animation: sidebarReveal 1s normal !important;
-  /* background-color: rgb(148, 148, 148); */
+  transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
 }
+
+
 
 .hamburger-icon {
   visibility: hidden;
@@ -142,13 +147,23 @@ html:not([data-scroll="0"]) sidebar-parent {
 }
 
 .sidebar-name-title {
-  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-logo {
-  margin-left: 15%;
-  height: 171px;
-  width: 180px;
+  aspect-ratio: 1 / 1;
+  /* margin-left: 15%; */
+  height: auto;
+  width: 85%;
+  border: solid 1px white;
 }
 
 .sidebar-ul li a.nav-link.active {
@@ -165,7 +180,7 @@ html:not([data-scroll="0"]) sidebar-parent {
 }
 
 .sidebar-ul li a.nav-link:hover {
-  background-color: rgb(214, 228, 135) !important;
+  background-color: rgb(255, 255, 255) !important;
   border-color: #66cfbe !important;
   color: #000000;
 }
@@ -195,7 +210,8 @@ html:not([data-scroll="0"]) sidebar-parent {
   position: relative;
   line-height: 35px;
   border-radius: 20px;
-  animation: revealAnimation 0.7s normal !important;
+  /* animation: revealAnimation 0.7s normal !important; */
+  animation: normal;
 }
 
 .cards {
@@ -212,6 +228,7 @@ html:not([data-scroll="0"]) sidebar-parent {
   display: flex;
   font-size: 10px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 @keyframes sidebarReveal {
@@ -248,6 +265,7 @@ html:not([data-scroll="0"]) sidebar-parent {
 
 .life-size-cardboard-parent-div img {
   filter: drop-shadow(1px 1px 500px rgba(172, 202, 17, 0.994));
+  
 }
 
 @keyframes cardboard-animation {
@@ -662,6 +680,10 @@ input[input="text"] {
 }
 
 .animate-arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow-button.rotate {
   transform: rotate(180deg);
 }
 
@@ -672,23 +694,34 @@ input[input="text"] {
 }
 
 .above-div {
-  /* border: 3px solid rgba(0, 0, 0, 0.219); */
-  /* flex: content; */
-  /* padding: 20px; */
-  /* font-size: 16px; */
-  /* opacity: 1; */
-  /* width: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   height: 50px;
-  background-color: rgba(64, 11, 209, 0.205);
+  background-color: rgb(255 255 255 / 0%);
   backdrop-filter: blur(5px);
   position: absolute;
   bottom: 60px;
   right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   animation: action-visible 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.above-div-hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  background-color: rgb(255 255 255 / 0%);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: 60px;
+  opacity: 0;
+  right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  animation: action-invisible 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 @keyframes action-visible {
@@ -698,6 +731,18 @@ input[input="text"] {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes action-invisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 100px;
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -740,32 +785,32 @@ input[input="text"] {
     display: none;
   }
   .navbar-res {
-    height: 60px;
+    /* height: 60px;
     min-width: 100vw;
-    background-color: #a7a6da;
+    background-color: #0400d8;
     display: flex;
-    align-items: center;
+    align-items: center; */
   }
 
   .hamburger-icon {
-    visibility: visible;
-    margin-left: 20px;
+    /* visibility: visible;
+    margin-left: 20px; */
   }
 
   .navbar-res-expanded {
-    position: absolute;
+    /* position: absolute;
     height: fit-content;
     width: 100vw;
     background-color: #a7a6da83;
     z-index: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
   }
 
   .expanded-list .sidebar-ul {
-    display: inline;
+    /* display: inline;
     text-align: center;
     background-color: rgba(255, 0, 0, 0);
-    border: 0;
+    border: 0; */
   }
 }
 
@@ -775,7 +820,7 @@ input[input="text"] {
   }
   .navbar-res {
     height: 60px;
-    min-width: 110vh;
+  
     background-color: #a7a6da;
     display: flex;
     align-items: center;

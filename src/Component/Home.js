@@ -1,6 +1,6 @@
 import React from "react";
 import { Sidebar } from "./Sidebar";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import { DeveloperCard } from "../Cards/DeveloperCard";
 import { LifeSizeCardboard } from "./LifeSizeCardboard";
 
@@ -14,13 +14,13 @@ export const Home = () => {
   document.title  =  'Home'
   return (
   <>
-  {/* <Container> */}
+  <Container>
     <Row>
-      <Col xs lg="3" style={{backgroundColor:"  "}}>
+      <Col className="col-6 col-sm-4 col-md-3 col-lg-3" style={{backgroundColor:"  "}}>
         <Sidebar />
       </Col>
       <Col className="item-b " style={{ backgroundColor: "  " }}>
-        <div className="home-body">
+        <div className="">
           <DeveloperCard />
           <LifeSizeCardboard />
         
@@ -29,7 +29,7 @@ export const Home = () => {
       {/* <Col>
       </Col> */}
     </Row>
-  {/* </Container> */}
+  </Container>
   </>    
   );
 };

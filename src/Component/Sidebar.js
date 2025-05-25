@@ -1,16 +1,9 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import UserImage from ".././Assest/Image/profile-img.png";
+import UserImage from ".././Assest/Image/Me.JPEG";
 import { NavLink } from "react-router-dom";
 
 export const Sidebar = () => {
-  // const [first, setfirst] = useState(second)
-
-  React.useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => response.json())
-      .then((json) => "");
-  }, []);
 
   return (
     <>
@@ -24,7 +17,7 @@ export const Sidebar = () => {
           </svg>
         </div>
       </div>
-      <div className="navbar-res-expanded">
+      <div className="">
         <div className="expanded-list">
           <ul className="nav nav-pills flex-column mb-auto sidebar-ul">
             <li className="fs-6 m-1">
@@ -57,9 +50,6 @@ export const Sidebar = () => {
           </ul>
         </div>
       </div>
-      {/* <button onclick={window["changeBackground"]()}>
-        Click here
-    </button> */}
       <div className="glass sidebar-parent " id="sidebar-parent">
         <div className="sidebar-content" id="sidebar-content">
           <div className="banner">
@@ -90,12 +80,6 @@ export const Sidebar = () => {
                 Skills{" "}
               </NavLink>
             </li>
-            {/* <li className="m-1">
-            <NavLink to='/Project' className="nav-link text-black fs-6">
-              Project
-            </NavLink>
-          </li> */}
-
             <li className=" m-1 fs-6">
               <NavLink to="/Experience" className="nav-link text-black">
                 {/* <svg className="bi me-2" width="16" height="16"></svg> */}
