@@ -7,7 +7,6 @@ import { resumePDF } from './../Assest/Document/Resume-abhay.pdf'
 
 const Footer = () => {
     const [isUpArrow, setIsUpArrow] = useState(true);
-    const [animationClass, setAnimationClass] = useState('');
     const [isDivVisible, setIsDivVisible] = useState(false);
 
     const toggleArrow = () => {
